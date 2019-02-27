@@ -11,7 +11,7 @@
   <script src="components/acoes.js"></script>
 
   <!-- Bootstrap 3.3.7. -->
-  <link rel="stylesheet" href="css/bootstrap.mim.css"
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="css/style.css">
@@ -21,26 +21,80 @@
   <div class="container">
     <div class="row">
       <div class="div col-xs-12">
-        <h1>Ola Mundo Cluel!</h1>
+        <h2>Ola Sou a Calculadora!</h2>
       </div>
     </div>
     <div class="row">
       <div class="div col-xs-12">
-        <input type="text" class="form-control">
+        <input type="text" class="form-control display" id="display">
       </div>
     </div>
-    <div class="col-xs-3">
-      <button class="button"></button>
+
+    <div class="row linha">
+      <div class="col-xs-3">
+        <button class="btn btn-primary btn-block botao" id="btn7" value="7">7</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-primary btn-block botao" id="btn8" value="8">8</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-primary btn-block botao" id="btn9" value="9">9</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-danger btn-block " id="">+</button>
+      </div>
     </div>
-    <div class="col-xs-3">
-      <button class="button"></button>
+
+    <div class="row linha">
+      <div class="col-xs-3">
+        <button class="btn btn-primary btn-block botao" id="btn4" value="4">4</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-primary btn-block botao" id="btn5" value="5">5</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-primary btn-block botao" id="btn6" value="6">6</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-danger btn-block " id="">-</button>
+      </div>
     </div>
-    <div class="col-xs-3">
-      <button class="button"></button>
+
+    <div class="row linha">
+      <div class="col-xs-3">
+        <button class="btn btn-primary btn-block botao" id="btn1" value="1">1</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-primary btn-block botao" id="btn2" value="2">2</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-primary btn-block botao" id="btn3" value="3">3</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-danger btn-block " id="">*</button>
+      </div>
     </div>
-    <div class="col-xs-3">
-      <button class="button"></button>
+
+    <div class="row linha">
+      <div class="col-xs-3">
+        <button class="btn btn-info btn-block " id="">CE</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-primary btn-block botao" id="btn0" value="0">0</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-success btn-block " id="">=</button>
+      </div>
+      <div class="col-xs-3">
+        <button class="btn btn-danger btn-block " id="">/</button>
+      </div>
     </div>
+
+    <div class="row linha margem">
+      <div class="col-xs-12">
+        <button type="button" class="btn btn-default btn-block" id="clear">Limpar</button>
+      </div> 
+    </div> 
   </div>
 </body>
 </html>

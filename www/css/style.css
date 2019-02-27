@@ -3,3 +3,16 @@
   height: 80px;
   font-size: 60px;
 }
+
+.linha{
+  margin-top: 10px;
+}
+
+.container{
+  border-style: solid;
+  border-color: black;
+  background-color: rgb(56, 56, 56) ;
+  color: cyan;
+  height: 667px;
+  border-radius: 10px;
+}
