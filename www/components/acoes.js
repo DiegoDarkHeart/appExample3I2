@@ -64,36 +64,54 @@ $(document).on('click','.botao',function(){
 
 //limpa o display
 $(document).on('click','#clear',function(){
-  var valor = $("#display").val();
-  valor = "";
-  $("#display").val(valor);
-})
+  $("#display").val("");
+});
 
 //implementação dos botões de calculos
 var op;
 var valor1;
 var valor2;
 
-$(document).on('click','btnSomar',function(){
-  valor1 = $("display").val();
+$(document).on('click','#btnSomar',function(){
+  valor1 = $("#display").val();
   op = "somar";
-  $("display").val("");
-})
+  $("#display").val("");
+});
 
-$(document).on('click','btnSubtrair',function(){
-  valor1 = $("display").val();
+$(document).on('click','#btnSubtrair',function(){
+  valor1 = $("#display").val();
   op = "subtrair";
-  $("display").val("");
-})
+  $("#display").val("");
+});
 
-$(document).on('click','btnMultiplicar',function(){
-  valor1 = $("display").val();
+$(document).on('click','#btnMultiplicar',function(){
+  valor1 = $("#display").val();
   op = "multiplicar";
-  $("display").val("");
-})
+  $("#display").val("");
+});
 
-$(document).on('click','btnDividir',function(){
-  valor1 = $("display").val();
+$(document).on('click','#btnDividir',function(){
+  valor1 = $("#display").val();
   op = "dividir";
-  $("display").val("");
-})
+  $("#display").val("");
+});
+
+$(document).on('click','#btnIgual',function(){
+  valor2 = $("#display").val();
+  var result;
+  switch(op){
+    case "somar":
+    result = parseFloat(valor1) + parseFloat(valor2);
+    break;
+    case "subtrair":
+    result = parseFloat(valor1) - parseFloat(valor2);
+    break;
+    case "dividir": 
+    result = parseFloat(valor1) / parseFloat(valor2);
+    break;
+    case "multiplicar":
+    result = parseFloat(valor1) * parseFloat(valor2);
+    break;
+  }
+  $("#display").val(result);
+});
